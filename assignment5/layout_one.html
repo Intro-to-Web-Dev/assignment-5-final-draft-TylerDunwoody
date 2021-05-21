@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--
+        My three improvements
+        1. On layout_one.html, I added what I call a command line that currently just allows you to change the color of the home page.
+        2. On layout_two.html, I added JavaScript to the league stat leaders element so that you can shoose what stat you want to see opposed from seeing all 4 at the same time.
+        3. I created a third layout that displays information about my site, such as the commands for the goal 1 addition and general information that is useful.
+        -->
+        <title>Layout One</title>
+    
+        <meta charset="UTF-8">
+        <meta name="description" content="File path worksheet on Relative file paths">
+        <meta name="keywords" content="Absolute File Path, Relative File Path, Worksheet">
+        <meta name="author" content="T. Noble">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link href="css/layout_one.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./css/nav.css">
+
+        <style>
+            @font-face {
+                font-family: 'Mollen';
+                src: url(font/Mollen.otf);
+            }
+            @font-face {
+                font-family: 'Nerve Agent';
+                src: url(font/Nerve_Agent.otf);
+            }
+            @font-face {
+                font-family: 'Wonders';
+                src: url('./font/AntiqueWonders.ttf');
+            }
+            .title{
+                font-family: 'Wonders';
+            }
+            #flexContainer div h1{
+                font-family: 'Nerve Agent';
+            }
+            #flexContainer div div h2{
+                font-family: 'Nerve Agent';
+            }
+            #stndInfo ol{
+                font-family: 'Mollen';
+            }
+            #schedule dl{
+                font-family: 'Mollen';
+            }
+            #newsInfo h4{
+                font-family: 'Mollen';
+            }
+            .leagues li a{
+                font-family: 'Nerve Agent';
+            }
+            button{font-family: 'Nerve Agent';}
+            @media screen and (max-width: 1785px){
+                .navBar img{
+                    display: none;
+                }
+                .title{
+                    margin: 35px;
+                }
+            }
+            @media screen and (max-width: 1450px){
+                body{
+                    background-image: url('./images/background3.jpg');
+                }
+                body #container #logo img{
+                    display: none;
+                }
+                body #container #logo h1{
+                    font-size: 10px;
+                }
+                .squish{
+                    display: flex;
+                }
+                .navBar{
+                    flex-direction: column;
+                    
+                }
+                .leagues ul{
+                    padding-bottom: 10px;
+                    margin-top: -20px;
+                }
+                .leagues li a{
+                    padding: 20px;
+                }
+            }
+            @media screen and (max-width: 1388px){
+                #news{
+                    margin-top: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <nav class="navBar" id="navAccent">
+                <img src="./images/logoWide.jpg" alt="logo" style="float: left; max-height: 142px;">
+                <div class="title">Twin Cities ESports</div>
+                <div class="leagues">
+                    <ul>
+                        <li><a href="./layout_two.html">Rocket League</a></li>
+                        <li><a href="./layout_two.html">Fortnite</a></li>
+                        <li><a href="./layout_two.html">COD: Modern Warfare</a></li>
+                        <li><a href="./layout_two.html">COD: Cold War</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="flexContainer">
+                <div id="standings">
+                    <h1 class="divTitle">Standings</h1>
+                    <div id="stndInfo">
+                        <div style="float: right;" class="stndDiv">
+                            <h2>Fortnite</h2>
+                            <ol>
+                                <li>Edina  3-0</li>
+                                <li>Minneapolis   3-0</li>
+                                <li>SHakopee   2-1</li>
+                            </ol>
+                        </div>
+                        <div class="stndDiv">
+                            <h2>Rocket League</h2>
+                            <ol>
+                                <li>Bloomington  3-0</li>
+                                <li>Minnetonka   2-1</li>
+                                <li>Farmington   2-1</li>
+                            </ol>
+                        </div>
+                        <div style="float: right;" class="stndDiv">
+                            <h2>Modern Warfare</h2>
+                            <ol>
+                                <li>Minnetonka  3-0</li>
+                                <li>Edina   2-1</li>
+                                <li>St. Paul   2-1</li>
+                            </ol>
+                        </div>
+                        <div class="stndDiv">
+                            <h2>Cold War</h2>
+                            <ol>
+                                <li>Bloomington  3-0</li>
+                                <li>Woodbury   2-1</li>
+                                <li>Duluth   2-1</li>
+                            </ol>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="schedule">
+                    <h1 class="divTitle" id="matches">Upcoming Matches</h1>
+                    <dl>5/2 - Rocket League - Bloom V.S. Edina</dl>
+                    <dl>5/2 - Fortnite - Mpls V.S. Shakopee</dl>
+                    <dl>5/3 - Rocket League - Mpls V.S. Mtka</dl>
+                    <dl>5/3 - COD: MW - St. Paul V.S. Bloom</dl>
+                    <dl>5/4 - COD: CW - Duluth V.S. Edina</dl>
+                    <dl>5/4 - Rocket League - Farmington V.S. Roch</dl>
+                    <dl>5/4 - Fortnite - Edina V.S. Burnsville</dl>
+                    <dl>5/6 - COD: MW - Bloom V.S. AHA</dl>
+                </div>
+                <div id="news">
+                    <h1 class="divTitle">League News</h1>
+                    <div id="newsInfo">
+                        <div style="margin-bottom: 10px;" class="newsDiv">
+                            <img src="images/jstn.jpg" alt="jstn" width="40%" style="float: right; max-height: 145px; max-width: 220px; margin-top: 5px; margin-right: 5px;">
+                            <h2 style="text-align: center; margin-bottom: 40px;">Jstn Wins Season 1 MVP</h2>
+                            <h4 style="padding-left: 5px; padding-right: 5px; font-size: 14px;">The veteran Jstn brings in his first MVP award in the inagural season for Twin Cities Esports League. Racking up 22 goals and 15 assists makes it no question who was gonna win. Jstn is keeping the same teammates in TNobes and Jelder, these three already showing their dominance as season two is into its first month. After three games this Bloomington team has rolled through their opponents only giving up 3 goals in toatal.</h4>
+                        </div>
+                        <div class="newsDiv">
+                            <img src="images/esports_stadium.jpg" alt="jstn" width="40%" style="float: right; max-height: 130px; max-width: 290px; margin-top: 5px; margin-right: 5px;">
+                            <h2 style="text-align: center; margin-bottom: -5px;">The First Season Finals comes to an end</h2>
+                            <h4 style="padding-left: 5px; padding-right: 5px; font-size: 13px;">Nobody knew how the inagural season for Twin Cities Esports was going to turn out. After a lively crowd at the Xcel Energy Center for the Season 1 finals, we can tell this league is here to stay. The final 4 style event was between Bloomington, Minneapolis, Edina, and Duluth. The Bloomington squad was heavily favoured coming into the event, and to the surprise of no one Bloomington brought home the Championship! After rolling through Duluth in the semifinal, Minneapolis put up quite the fight in the championship, bringing it to game 7.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <input type="text" id="textId" placeholder="Enter A Command">
+                <button onclick="screenCustomization()" id="buttonId" >Activate</button>
+                <div style="width: 50px;"></div>
+                <button id="button2">
+                    <a href="./siteInfo.html" style="text-decoration: none;">
+                        <p>Site Info</p>
+                    </a>
+                </button>
+            </footer>
+        </div>
+        <script src="test.js"></script>
+    </body>
+</html>

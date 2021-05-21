@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Layout Two</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="File path worksheet on Relative file paths">
+        <meta name="keywords" content="Absolute File Path, Relative File Path, Worksheet">
+        <meta name="author" content="T. Noble">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="css/layout_two.css" rel="stylesheet" type="text/css">
+        
+        <style>
+            @font-face {
+                font-family: 'Nerve Agent';
+                src: url(font/Nerve_Agent.otf);
+            }
+            @font-face {
+                font-family: 'Wonders';
+                src: url('./font/AntiqueWonders.ttf');
+            }
+            @font-face {
+                font-family: 'Mollen';
+                src: url(font/Mollen.otf);
+            }
+            #flexContainer #news #newsInfo div h2{
+                font-family: 'Nerve Agent';
+            }
+            header h1{
+                font-family: 'Nerve Agent';
+            }
+            .divTitle{
+                font-size: 32px;
+                font-family: 'Nerve Agent';
+            }
+            header h1{
+                font-family: 'Wonders';
+                letter-spacing: 4px;
+            }
+            header #btn1 button h2{
+                font-family: 'Nerve Agent';
+            }
+            h4{
+                font-family: 'Mollen';
+            }
+            ol{
+                font-family: 'Mollen';
+            }
+            h3{
+                font-family: 'Mollen';
+            }
+            #statInfo h2{
+                font-family: 'Mollen';
+            }
+            .statHeader{
+                font-family: 'Nerve Agent';
+            }
+            @media screen and (max-width: 1678px){
+                body header #logo img{
+                    display: none;
+                }
+                html{
+                    background-image: url('./images/background3.jpg');
+                }
+                header #btn1 button h2{
+                    display: none;
+                }
+                header #btn1 button img{
+                    float: none;
+                    margin: auto;
+                }
+            }
+            @media screen and (max-width: 1480px){
+                #pageDescription{
+                    display: none;
+                }
+                #btn1{
+                    float: right;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="images/logoIMG.jpeg" alt="logo" style="float: left;" width="50%">
+                <h1 style="margin-top: 23px; margin-left: 1px; font-size: 52px;">Twin Cities</h1>
+                <h1 style="margin-top: -20px;">ESports</h1>
+            </div>
+            <div id="btn1">
+                <button>
+                    <a href="./layout_one.html" style="text-decoration: none; color: black;">
+                        <img src="./images/home.png" alt="home icon" width="150px">
+                        <h2>Take</h2>
+                        <h2>Me</h2>
+                        <h2>Home</h2>
+                    </a>
+                </button>
+            </div>
+            <div id="pageDescription">
+                <h1 style="font-size: 80px; margin-top: -3px;">Rocket</h1>
+                <h1 style="font-size: 80px; margin-top: -55px;">League</h1>
+            </div>
+        </header>
+        <div id="flexContainer">
+            <div id="news">
+                <h1 class="divTitle" style="color: #fb81fb; letter-spacing: 3px;">League News</h1>
+                <div id="newsInfo">
+                    <div style="float: right; margin-right: 20px;">
+                        <img src="images/tcLogo.jpg" alt="Splash" style="float: right;" width="50%">
+                        <h2>Jstn Wins MVP</h2>
+                        <h4 style="padding-left: 5px; padding-right: 5px; text-align: left; font-size: 16px;">The veteran Jstn brings in his first MVP award in the inagural season for Twin Cities Esports League. Racking up 22 goals and 15 assists makes it no question who was gonna win. Jstn is keeping the same teammates in TNobes and Jelder, these three already showing their dominance as season two is into its first month. After three games this Bloomington team has rolled through their opponents only giving up 3 goals in toatal.</h4>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <img src="images/esports_stadium.jpg" alt="esports_stadium" style="float: right;" width="50%">
+                        <h2>Season 1 Finals Come to an end</h2>
+                        <h4 style="padding-left: 5px; padding-right: 5px; font-size: 15px; text-align: left;">Nobody knew how the inagural season for Twin Cities Esports was going to turn out. After a lively crowd at the Xcel Energy Center for the Season 1 finals, we can tell this league is here to stay. The final 4 style event was between Bloomington, Minneapolis, Edina, and Duluth. The Bloomington squad was heavily favoured coming into the event, and to the surprise of no one Bloomington brought home the Championship! After rolling through Duluth in the semifinal, Minneapolis put up quite the fight in the championship, bringing it to game 7.</h4>
+                    </div>
+                    <div style="float: right; margin-right: 20px;">
+                        <img src="images/flag.jpeg" alt="jstn" style="float: right;" width="50%">
+                        <h2>The National Anthem</h2>
+                        <h4 style="padding-left: 5px; padding-right: 5px; font-size: 16px; text-align: left;">O say can you see, by the dawn’s early light,
+                            What so proudly we hail’d at the twilight’s last gleaming,
+                            Whose broad stripes and bright stars through the perilous fight
+                            O’er the ramparts we watch’d were so gallantly streaming?
+                            And the rocket’s red glare, the bombs bursting in air,
+                            Gave proof through the night that our flag was still there,
+                            O say does that star-spangled banner yet wave
+                            O’er the land of the free and the home of the brave?
+                        </h4>
+                    </div>
+                    <div style="margin-left: 20px;">
+                        <img src="images/stpaul2.png" alt="esports_stadium" style="float: right;" width="50%">
+                        <h2>St. Paul is out for Season 2</h2>
+                        <h4 style="padding-left: 5px; padding-right: 5px; font-size: 15px; text-align: left;">After an embarassing season 1 showing from the St. Paul team, they are out for season 2. When you score only 2 goals the whole season, with one being an own goal by the opponent. It's not very surprising that they were not invited back. The problem they ran into was their offensive ability. The defense was better than most teamss above them, this being in part by GarretG who was spectacular last season when he lead the league in saves. Taking their place will be Duluth Kraken, they're already doing better than St. Paul last season witha record of 2-1.</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="midCol">
+                <div id="statInfo">
+                    <h1 class="divTitle" style="margin-bottom: -3px; font-size: 30px;">League Stat Leaders</h1>
+                    <h2 class="javaLabel">Goals</h2>
+                    <h2 class="javaLabel">Assists</h2>
+                    <h2 class="javaLabel">Saves</h2>
+                    <h2 class="javaLabel">Shots</h2>
+                    <div id="goalDiv">
+                        <h2 class="statHeader">Goals</h2>
+                        <ol>
+                            <li>TNobes 6</li>
+                            <li>Josh 5</li>
+                            <li>Jelder 5</li>
+                        </ol>
+                    </div>
+                    <div id="assistDiv">
+                        <h2 class="statHeader">Assists</h2>
+                        <ol>
+                            <li>Jelder 7</li>
+                            <li>Musty 6</li>
+                            <li>Jstn 6</li>
+                        </ol>
+                    </div>
+                    <div id="saveDiv">
+                        <h2 class="statHeader">Saves</h2>
+                        <ol>
+                            <li>Squishy 9</li>
+                            <li>TNobes 8</li>
+                            <li>Queen 8</li>
+                        </ol>
+                    </div>
+                    <div id="shotDiv">
+                        <h2 class="statHeader">Shots</h2>
+                        <ol>
+                            <li>Ap 15</li>
+                            <li>Jelder 12</li>
+                            <li>Jstn 12</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="standings">
+                    <div id="stndInfo">
+                        <h1 class="divTitle">League Standings</h1>
+                        <div>
+                            <h2 style="font-size: 25px; text-align: left; margin-left: 55px; margin-top: -8px; margin-bottom: -20px">Team</h2>
+                            <ol>
+                                <li>Bloomington</li>
+                                <li>Minnetonka</li>
+                                <li>Farmington</li>
+                                <li>Minneapolis</li>
+                                <li>Duluth</li>
+                                <li>Edina</li>
+                                <li>Richfield</li>
+                                <li>Burnsville</li>
+                            </ol>
+                            <div id="stndWins">
+                                <h3 style="margin-bottom: 29px;">W-L GF GA</h3>
+                                <h3>3-0 13 2</h3>
+                                <h3>2-1 10 3</h3>
+                                <h3>2-1 9  6</h3>
+                                <h3>2-1 8  6</h3>
+                                <h3>1-2 6  7</h3>
+                                <h3>1-2 6  9</h3>
+                                <h3>1-2 4  10</h3>
+                                <h3>0-3 2  15</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="schedule">
+                <h1 class="divTitle">League Schedule</h1>
+                <h3 class="sc_1">5/2 #1 Bloomington Bears</h3>
+                <h3 class="sc_2">#6 Edina Cake Eaters</h3>
+                <h3 class="sc_1">5/3 #4 Minneapolis Eagles</h3>
+                <h3 class="sc_2">#2 Minnetonka Sailors</h3>
+                <h3 class="sc_1">5/4 #3 Farmington Farmers</h3>
+                <h3 class="sc_2">#7 Richfield Raiders</h3>
+                <h3 class="sc_1">5/6 #8 Burnsville Blaze</h3>
+                <h3 class="sc_2">#5 Duluth Kraken</h3>
+                <h3 class="sc_1">5/6 #3 Farmington Farmers</h3>
+                <h3 class="sc_2">#6 Edina Cake Eaters</h3>
+                <h3 class="sc_1">5/7 #1 Bloomington Bears</h3>
+                <h3 class="sc_2">#4 Minneapolis Eagles</h3>
+                <h3 class="sc_1">5/9 #2 Minnetonka Sailors</h3>
+                <h3 class="sc_2">#7 Richfield Raiders</h3>
+            </div>
+        </div>
+        <script src="test.js"></script>
+    </body>
+</html>

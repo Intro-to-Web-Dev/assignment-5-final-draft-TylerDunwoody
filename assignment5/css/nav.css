@@ -1,0 +1,59 @@
+html{
+    box-sizing: border-box;
+    width: 99%;
+    margin: auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navBar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8febf7;
+    color: white;
+}
+.title{
+    text-align: center;
+    font-size: 60px;
+    color: black;
+}
+.leagues ul{
+    margin: 0;
+    padding-right: 1px;
+    display: flex;
+}
+.leagues li{
+    list-style: none;
+    font-size: 20px;
+}
+.leagues li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+.leagues li:hover{
+    background-color: #fb81fb;
+    border-radius: 20px;
+}
+.squish{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.squish .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+}
